@@ -6,15 +6,20 @@
       <input type="submit" />
     </form>
     <yes-no></yes-no>
+    <br />
+    <blog-post title="woah!" ></blog-post>
   </div>
 </template>
 
 <script>
   import YesNo from '@/components/YesNo.vue'
+  import BlogPost from '@/components/BlogPost.vue'
+
   export default {
     name: 'Welcome',
     components: {
-      YesNo
+      YesNo,
+      BlogPost
     },
     data () {
       return {
