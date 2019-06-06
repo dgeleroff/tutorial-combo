@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import DiceRoll from '@/components/DiceRoll.vue'
 import About from '@/components/About.vue'
 import Welcome from '@/components/Welcome.vue'
+import Coins from '@/components/Coins.vue'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/diceroll',
       name: 'DiceRoll',
       component: DiceRoll
+    },
+    {
+      path: '/coins/:id',
+      name: 'Coins',
+      component: Coins
     }
   ]
 })
