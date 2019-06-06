@@ -6,13 +6,14 @@
     <router-link to="/diceroll">DiceRoll</router-link>
 
     <router-view/>
+
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App',
-}
+  export default {
+    name: 'App',
+  }
 </script>
 
 <style>

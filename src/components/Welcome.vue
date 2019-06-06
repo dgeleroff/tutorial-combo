@@ -5,12 +5,17 @@
       <input v-model="coinName" type="text" placeholder="search a currency!"/>
       <input type="submit" />
     </form>
+    <yes-no></yes-no>
   </div>
 </template>
 
 <script>
+  import YesNo from '@/components/YesNo.vue'
   export default {
     name: 'Welcome',
+    components: {
+      YesNo
+    },
     data () {
       return {
         coinName: ''
