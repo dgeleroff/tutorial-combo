@@ -4,7 +4,7 @@
       Ask any yes/no question! <input v-model="question"/>
     </h2>
     <h3>{{ answer }}</h3>
-    <img v-bind:src="dynamicUrl"/>
+    <!-- <img v-bind:src="dynamicUrl"/> -->
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="dice-roll">
     <button v-on:click="callAPI">Roll the Dice!😎</button>
-    <div v-if="result.length!==0">
+    <div v-if="result.length!==0" class="card card--shadow-depth-3">
       <h4>{{result.message}}</h4>
       <img id="dice" v-bind:src="dice[result.number-1]">
     </div>
@@ -45,7 +45,20 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '~@causeway/core/dist/spa.scss';
+@import '~@causeway/core/dist/base/breakpoints';
+@import "~@causeway/core/dist/utilities/_variables.scss";
+@import "~@causeway/core/dist/utilities/_helpers.scss";
+@import "~@causeway/core/dist/base/_icon_backgrounds.scss";
+@import "~@causeway/core/dist/base/_breakpoints.scss";
+@import "~@causeway/core/dist/base/_buttons.scss";
+@import '~@causeway/core/dist/base/display';
+@import '~@causeway/core/dist/base/icons';
+@import '~@causeway/core/dist/base/lists';
+@import "~@causeway/core/dist/base/_grid.scss";
+@import "~@causeway/core/dist/blocks/_card.scss";
+
 #dice {
   height: 100px;
   width: 100px;
